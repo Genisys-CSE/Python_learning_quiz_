@@ -1,0 +1,70 @@
+Functions
+
+1. Defining a Function:
+- Functions are defined using the `def` keyword, followed by the function name and parentheses. Inside the parentheses, you can define parameters (optional), which are used to pass values into the function.
+    Syntax:
+    def function_name(parameters):
+        # Function body
+        statement(s)
+        return value  # Optional return statement
+    Example:
+    def greet():
+        print("Hello, World!")
+    greet()  # Calling the function
+
+2. Function Parameters:
+- Functions can accept parameters (also called arguments) which are values passed to the function when it is called. These parameters are defined within the parentheses when defining the function.
+    Example:
+    def greet(name):
+        print(f"Hello, {name}!")
+    greet("Alice")  # Output: Hello, Alice!
+
+    Default Parameters:
+    - You can define default values for parameters. If the caller doesn't provide a value for a parameter, the default value will be used.
+        def greet(name="Guest"):
+            print(f"Hello, {name}!")
+        greet()         # Output: Hello, Guest!
+        greet("Bob")    # Output: Hello, Bob!
+
+3. Returning Values from a Function:
+- A function can return a value using the `return` keyword. This allows you to send data back to the calling code.
+    Example:
+    def add(a, b):
+        return a + b
+    result = add(3, 5)
+    print(result)  # Output: 8
+
+4. Variable Scope:
+- Variables inside a function are local to that function. They cannot be accessed outside the function unless explicitly returned.
+    - Local scope: Variables defined within a function.
+    - Global scope: Variables defined outside any function.
+
+    Local Variables Example:
+    def test_function():
+        local_var = 10
+        print(local_var)
+    test_function()  # Output: 10
+    # print(local_var)  # This will raise a NameError because local_var is not accessible outside
+
+    Global Variables Example:
+    global_var = 20
+    def test_function():
+        print(global_var)
+    test_function()  # Output: 20
+
+5. Keyword Arguments (Named Arguments):
+- In Python, you can call a function by passing arguments explicitly by name. This is known as keyword arguments.
+    Example:
+    def greet(name, age):
+        print(f"Hello, {name}! You are {age} years old.")
+    greet(name="Alice", age=30)  # Output: Hello, Alice! You are 30 years old.
+
+6. Recursive Functions:
+- A function that calls itself is known as a recursive function. Recursive functions are useful for solving problems that can be broken down into smaller sub-problems of the same type (e.g., calculating factorial, Fibonacci sequence).
+    Example (Factorial):
+    def factorial(n):
+        if n == 0:  # Base case
+            return 1
+        else:
+            return n * factorial(n - 1)
+    print(factorial(5))  # Output: 120

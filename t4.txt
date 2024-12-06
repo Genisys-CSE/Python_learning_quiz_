@@ -1,0 +1,59 @@
+Operators:
+1. Arithmetic Operators
+- These operators are used to perform basic arithmetic operations like addition, subtraction, multiplication, etc.
+    + : Addition
+    - : Subtraction
+    * : Multiplication
+    / : Division (always returns a float)
+    // : Floor Division (returns the integer quotient)
+    % : Modulus (remainder of division)
+    ** : Exponentiation (power)
+
+2. Comparison (Relational) Operators:
+- These operators are used to compare two values.
+    == : Equal to
+    != : Not equal to
+    > : Greater than
+    < : Less than
+    >= : Greater than or equal to
+    <= : Less than or equal to
+
+3. Logical Operators:
+- Logical operators are used to combine conditional statements.
+    and : Logical AND (True if both expressions are true)
+    or : Logical OR (True if at least one expression is true)
+    not : Logical NOT (Reverses the boolean value)
+
+4. Assignment Operators:
+- These operators are used to assign values to variables.
+    = : Assign
+    += : Add and assign
+    -= : Subtract and assign
+    *= : Multiply and assign
+    /= : Divide and assign
+    //= : Floor divide and assign
+    %= : Modulus and assign
+    **= : Exponentiate and assign
+
+5. Identity Operators:
+- Identity operators are used to compare objects' memory locations.
+    is : True if both operands refer to the same object
+    is not : True if both operands do not refer to the same object
+
+6. Membership Operators:
+- Membership operators are used to test if a value is a member of a sequence (like a list, tuple, or string).
+    in : True if value is found in the sequence
+    not in : True if value is not found in the sequence
+
+7. Bitwise Operators:
+- Bitwise operators are used to perform operations on bits (binary numbers).
+    & : Bitwise AND
+    | : Bitwise OR
+    ^ : Bitwise XOR
+    ~ : Bitwise NOT (inverts the bits)
+    << : Bitwise left shift
+    >> : Bitwise right shift
+
+8. Ternary (Conditional) Operator:
+- The ternary operator allows for conditional expressions in a concise manner.
+    x if condition else y

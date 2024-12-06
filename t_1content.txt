@@ -1,0 +1,91 @@
+Control Structures
+In Python, control structures are used to control the flow of execution based on conditions, loops, or user-defined logic. There are several types of control structures in Python:
+
+1. Conditional Statements
+Conditional statements allow you to execute certain blocks of code based on whether a condition is True or False.
+
+a. if statement
+The if statement is used to test a condition and execute a block of code if the condition is True.
+x = 10
+if x > 5:
+    print("x is greater than 5")
+
+b. else statement
+The else statement executes a block of code if the condition in the if statement is False.
+x = 3
+if x > 5:
+    print("x is greater than 5")
+else:
+    print("x is not greater than 5")
+
+c. elif statement (short for "else if")
+You can use elif to check multiple conditions sequentially. The first True condition will be executed, and the rest will be ignored.
+x = 10
+if x > 15:
+    print("x is greater than 15")
+elif x > 5:
+    print("x is greater than 5 but less than or equal to 15")
+else:
+    print("x is 5 or less")
+
+2. Looping Statements
+Loops are used to execute a block of code repeatedly until a condition is met.
+
+a. for loop
+The for loop is used to iterate over a sequence (like a list, tuple, string, or range) and execute a block of code for each item in the sequence.
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+
+# Loop through a range
+for i in range(5):
+    print(i)
+
+b. while loop
+The while loop repeatedly executes a block of code as long as the condition remains True.
+x = 0
+while x < 5:
+    print(x)
+    x += 1
+
+c. break statement
+The break statement is used to exit the loop prematurely, even if the loop condition hasn't been met.
+for i in range(10):
+    if i == 5:
+        break
+    print(i) # Breaks the loop when i equals 5
+
+d. continue statement
+The continue statement is used to skip the current iteration and move to the next iteration of the loop.
+for i in range(5):
+    if i == 3:
+        continue  # Skips the current iteration when i equals 3
+    print(i)
+
+e. else in loops
+The else block after a loop executes when the loop completes without encountering a break statement
+for i in range(5):
+    print(i)
+else:
+    print("Loop completed without break")
+
+3. Function Control
+Functions in Python provide modularity and are often used to control the flow of the program.
+
+a. return statement
+The return statement is used to exit a function and return a value to the caller.
+def add(a, b):
+    return a + b
+result = add(3, 4)
+print(result)  # 7
+
+b. yield statement (for Generators)
+The yield keyword is used in a function to make it a generator. Instead of returning a value and exiting, yield allows the function to return multiple values over time.
+def count_up_to(n):
+    count = 1
+    while count <= n:
+        yield count
+        count += 1
+counter = count_up_to(3)
+for num in counter:
+    print(num)  # 1, 2, 3

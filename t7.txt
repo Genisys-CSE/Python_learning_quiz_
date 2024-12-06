@@ -1,0 +1,53 @@
+File Handling in Python
+In Python, file handling refers to the process of working with files — reading, writing, and modifying files on the system. Python provides built-in functions and methods for interacting with files, allowing you to open, read, write, and close files.
+
+1. Opening a File
+- To interact with a file, you must first open it using the built-in open() function. This function takes at least one argument — the name of the file you want to open — and optionally a mode that specifies the file’s operation.
+    Syntax: file_object = open('file_name', 'mode')
+    - 'file_name': The name (and path, if necessary) of the file you want to open.
+    - 'mode': Specifies the mode in which to open the file (more on modes below).
+
+2. Reading from Files
+- Once a file is opened in a suitable mode (like 'r' or 'r+'), you can read its contents using the following methods:
+    a. read(): Reads the entire file as a single string.
+        file = open('example.txt', 'r')
+        content = file.read()  # Read the entire file
+        print(content)
+        file.close()
+
+    b. readline(): Reads a single line from the file.
+        file = open('example.txt', 'r')
+        line = file.readline()  # Read the first line
+        print(line)
+        file.close()
+
+    c. readlines(): Reads all lines in a file and returns a list of strings (each string is a line).
+        file = open('example.txt', 'r')
+        lines = file.readlines()
+        print(lines)  # List of lines
+        file.close()
+
+3. Writing to Files
+- You can write data to a file by opening it in 'w', 'a', or 'w+' mode. Writing will overwrite existing content in 'w' mode, or append to the file in 'a' mode.
+    a. write(): Writes a string to a file.
+        file = open('example.txt', 'w')
+        file.write("Hello, world!")  # Write a string to the file
+        file.close()
+
+    b. writelines(): Writes a list of strings to a file.
+        lines = ["First line\n", "Second line\n", "Third line\n"]
+        file = open('example.txt', 'w')
+        file.writelines(lines)  # Write each string from the list to the file
+        file.close()
+
+4. Appending to Files
+- To append data to an existing file without overwriting it, open the file in 'a' mode.
+        file = open('example.txt', 'a')
+        file.write("\nAppending new content.")  # Add content at the end of the file
+        file.close()
+
+5. Closing a File
+- After performing operations on a file, it's important to close it to free up system resources.
+        file = open('example.txt', 'r')
+        content = file.read()
+        file.close()  # Always close the file when done

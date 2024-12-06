@@ -1,0 +1,69 @@
+
+Data Types:
+• Data type is the classification of the 
+type of values that can be assigned
+to variables.
+• Dynamically typed languages, the 
+interpreter itself predicts the data type
+of the Python Variable based on the 
+type of value assigned to that variable
+
+Data Types (Numbers):
+The number data type is divided into 
+the following five data types:
+• Integer
+• Long Integer (removed from py3)
+• Floating-point Numbers
+Complex Numbers
+
+Strings
+Data Types (String):
+• Python string is an ordered 
+collection of characters which is used 
+to represent and store the text-based 
+information
+*Mutable Data Types: Data types in 
+python where the value assigned to a
+variable can be changed
+*Immutable Data Types: Data types in 
+python where the value assigned to a
+variable cannot be changed
+
+Data Types (Tuples):
+• Tuple data type in Python is a 
+collection of various immutable Python
+objects separated by commas.
+A Python tuple is created using 
+parentheses around the elements in 
+the tuple.
+
+Data Types (List):
+Unlike strings, lists can contain any sort 
+of objects: numbers, strings and other 
+python list
+Enclosed between square brackets ‘[]’
+Ordered collections of arbitrary objects
+
+Data Types (Set):
+• It is an unordered collection of 
+elements which means that a set is a
+collection that stores elements of 
+different Python Data Types.
+For example:
+myset = {“bennett”, “computer”, “science”}
+
+Data Types 
+( Dictionary):
+• The keys are separated from their 
+respective values by a colon (:) 
+between them, and each key–value pair is 
+separated using commas (,).
+
+Datatype Conversion:
+• As a matter of fact, we can do 
+various kinds of conversions between
+strings, integers and floats using the 
+built-in int , float , and str functions
+For example:
+>>> x = 10
+>>> float(x)

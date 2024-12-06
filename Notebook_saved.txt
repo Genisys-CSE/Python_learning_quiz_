@@ -1,0 +1,12 @@
+Data Types:
+• Data type is the classification of the 
+type of values that can be assigned
+
+
+Literals:
+• In the following example, 
+the parameter values 
+passed to the print
+function are all technically 
+called literals.
+

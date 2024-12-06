@@ -1,0 +1,51 @@
+Exception Handling
+Exception handling in Python is used to manage and handle errors gracefully during program execution, allowing the program to respond to unexpected situations without crashing. The primary keywords for exception handling are try, except, else, and finally.
+
+Here’s how each of these keywords works:
+1. try: The try block lets you test a block of code for errors. If an error occurs in the try block, Python will jump to the except block.
+2. except: The except block lets you handle the error. You can specify the type of exception to catch specific errors.
+3. else: The else block executes if no exceptions were raised in the try block.
+4. finally: The finally block will execute regardless of whether an exception occurred or not. This is useful for cleanup actions (like closing a file).
+
+Basic Example:
+try:
+    num1 = int(input("Enter a number: "))
+    num2 = int(input("Enter another number: "))
+    result = num1 / num2
+except ValueError:
+    print("Invalid input! Please enter a number.")
+except ZeroDivisionError:
+    print("Error! Cannot divide by zero.")
+else:
+    print("The result is:", result)
+finally:
+    print("This block will always execute.")
+
+Explanation of the Example:
+- try block: Attempts to divide two numbers.
+- except ValueError: Catches errors where the input is not a number.
+- except ZeroDivisionError: Catches errors when attempting to divide by zero.
+- else block: Executes only if no exceptions are raised, displaying the division result.
+- finally block: Executes regardless of whether an error occurred or not.
+
+Common Exceptions:
+- ValueError: Raised when a function receives an argument of the correct type but inappropriate value.
+- TypeError: Raised when an operation or function is applied to an object of inappropriate type.
+- ZeroDivisionError: Raised when dividing by zero.
+- FileNotFoundError: Raised when trying to access a file that doesn’t exist.
+
+Using raise to Trigger Exceptions:
+- You can use raise to trigger an exception manually.
+def check_age(age):
+    if age < 18:
+        raise ValueError("Age must be 18 or older.")
+    return "Age is valid."
+try:
+    print(check_age(15))
+except ValueError as e:
+    print(e)
+
+This will output:
+Age must be 18 or older.
+
+Exception handling helps make Python code more robust, as it ensures that the program can handle errors without crashing unexpectedly.

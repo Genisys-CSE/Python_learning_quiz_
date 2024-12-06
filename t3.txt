@@ -1,0 +1,100 @@
+
+Literals:
+• In the following example, 
+the parameter values 
+passed to the print
+function are all technically 
+called literals.
+More precisely, “Bennett 
+University” and “Welcome 
+to Bennett” are called 
+textual literals, while 3 
+and 2.3 are called 
+numeric literals.
+
+Statements:
+Python statements are 
+nothing but logical 
+instructions that the interpreter
+can read and execute. It 
+can be both single and 
+multiline.
+There are two categories of 
+statements in Python:
+1: Simple Assignment 
+Statements
+2: Simultaneous 
+Assignment
+
+Identifiers:
+• Python has some rules 
+about how identifiers can 
+be formed.
+• Some identifiers are part 
+of Python itself (they are 
+called reserved words or
+keywords) and cannot be 
+used by programmers as 
+ordinary identifiers.
+
+Expressions:
+You can produce new data 
+(numeric or text) values 
+in your program using 
+text.
+Addition operator
+>>> x = 2 + 3
+>>> print(x)
+5
+Multiplication operator
+>>> print(5 * 7)
+35
+
+Script:
+• One problem with entering code 
+interactively into a Python shell is that
+the definitions are lost when we quit 
+the shell.
+• If we want to use these definitions again, 
+we have to type them all over again!
+• To this end, programs are usually 
+created by typing definitions into a
+separate file called a module or script.
+This file is saved on disk so that it can be 
+used over and over again.
+
+A Python module file is just a text file 
+with a .py extension, which can be 
+created using any program for editing 
+text.
+
+Programming 
+Environments and 
+IDLE:
+• A special type of software known as 
+a programming environment
+simplifies the process of creating 
+modules/programs.
+• A programming environment helps 
+programmers write programs and
+includes features such as automatic 
+indenting, color highlighting, and
+interactive development.
+• The standard Python distribution 
+includes a programming environment
+called IDLE that you can use for working 
+on the programs of this
+course.
+
+Summary:
+• Programs are composed of statements 
+that are built from identifiers and
+expressions.
+• Identifiers are names.
+• They begin with an underscore or letter 
+which can be followed by a combination of
+letter, digit, and/or underscore characters.
+• They are case sensitive.
+• Expressions are the fragments of a 
+program that produce data.
+• They can be composed of literals.
