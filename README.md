@@ -3,6 +3,6 @@
 
 
 #TO RUN THIS PROJECT
-1. Download all the files in sma directory
+1. Download all the files in a same directory
 2. Open That Directory in IDE
 3. Then boom run the "project_python.py"
